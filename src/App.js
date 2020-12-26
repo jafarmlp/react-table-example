@@ -3,12 +3,11 @@ import Table from "./table/Table";
 import { tableConfig } from "./conf/table-config";
 
 function App() {
-  
+
   const createTables = () => {
     return tableConfig.map((config) => {
       return (
         <div>
-          <h4>{config.header}</h4>
           <Table config={config} />
         </div>
       );
